@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>Judge the way and display jsp</description>
+    <display-name>AddController1</display-name>
+    <servlet-name>AddController1</servlet-name>
+    <servlet-class>stuPackage.AddController1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>process data from class add/change</description>
+    <display-name>AddProcess1</display-name>
+    <servlet-name>AddProcess1</servlet-name>
+    <servlet-class>stuPackage.AddProcess1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>process data from course add/change</description>
+    <display-name>AddProcess2</display-name>
+    <servlet-name>AddProcess2</servlet-name>
+    <servlet-class>stuPackage.AddProcess2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>receive inquire choice and get data</description>
+    <display-name>InquireProcess1</display-name>
+    <servlet-name>InquireProcess1</servlet-name>
+    <servlet-class>stuPackage.InquireProcess1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>receive filter condition and transmit data</description>
+    <display-name>FilterProcess1</display-name>
+    <servlet-name>FilterProcess1</servlet-name>
+    <servlet-class>stuPackage.FilterProcess1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>count and analyse record</description>
+    <display-name>CountProcess</display-name>
+    <servlet-name>CountProcess</servlet-name>
+    <servlet-class>stuPackage.CountProcess</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>AddController1</servlet-name>
+    <url-pattern>/AddController1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProcess1</servlet-name>
+    <url-pattern>/AddProcess1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProcess2</servlet-name>
+    <url-pattern>/AddProcess2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InquireProcess1</servlet-name>
+    <url-pattern>/InquireProcess1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FilterProcess1</servlet-name>
+    <url-pattern>/FilterProcess1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CountProcess</servlet-name>
+    <url-pattern>/CountProcess</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
